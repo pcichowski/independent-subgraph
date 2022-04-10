@@ -1,9 +1,9 @@
-# Independent subgraph in social circles
+# Largest Independent Subgraph in social circles
 
 ## Algorithm
 The task in question is to find the largest possible independent subgraph in a sparse graph given - this problem is known to be NP-complete.
 
-An independent subgraph is a graph, shuch that none of its nodes are mututally adjacent in the original, larger graph.
+An independent subgraph is such a graph, that none of its nodes are mututally adjacent in the original, larger graph.
 
 I used a greedy algorithm that selects a node with the smallest degree, adds it to the result set and removes the node and its neighbours from the graph.
 It produces a suboptimal solution, but it has been shown that its results are satisfactory and 
